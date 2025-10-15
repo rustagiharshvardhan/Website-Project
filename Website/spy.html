@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="buy.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images\Logo3.png" alt="Logo">
+        </div>
+        <nav>
+            <div class="mid">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.php" class="active">Home</a></li>
+                        <li><a href="latest.php" class="active">Latest</a></li>
+                        <li><a href="top.php" class="active">Top Selling</a></li>
+                        <li><a href="ranking.php" class="active">Ranking</a></li>
+                        <li><a href="about.php" class="active">About Us</a></li>
+                        <!-- <li><a href="#">Contact Us</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <div class="right">
+            <div class="dropdown">
+                <button class="btn" onclick="toggleMenu()">Menu &#9776;</button>
+                <div class="dropdown-content" id="menuContent">
+                    <!-- <button class="close-btn" onclick="toggleMenu()">&times; Close</button> -->
+                    <a href="index.php">Home</a>
+                    <a href="about.php">About Us</a>
+                    <a href="about.php#contact">Contact Us</a>
+                    <a href="login.php">Log In</a>
+                    <a href="signup.php">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="manga">
+        <div class="img-container">
+            <img src="images\spy.jpg" alt="spy">
+            <button id="buy"> Buy Now</button>
+        </div>
+        <div class="summary">
+            <div class="title">
+            <h2>SPY x FAMILY</h2>
+            <p1>Tatsuya Endo</p1>
+        </div>
+            <h4>SUMMARY</h4>
+            <p2>The master spy codenamed <Twilight> has spent his days on undercover missions, all for the dream of a better world. But one day, he receives a particularly difficult new order from command. For his mission, he must form a temporary family and start a new life?! A Spy/Action/Comedy about a one-of-a-kind family!</p2>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="close-btn" onclick="document.getElementById('popup').style.display = 'none';">&times;</div>
+            <h2>Buy All Volumes !!!</h2><hr>
+            <div class="volumes">
+                <a href="">Volume 11</a><br><hr>
+                <a href="">Volume 10</a><br><hr>
+                <a href="">Volume 09</a><br><hr>
+                <a href="">Volume 08</a><br><hr>
+                <a href="">Volume 07</a><br><hr>
+                <a href="">Volume 06</a><br><hr>
+                <a href="">Volume 05</a><br><hr>
+                <a href="">Volume 04</a><br><hr>
+                <a href="">Volume 03</a><br><hr>
+                <a href="">Volume 02</a><br><hr>
+                <a href="">Volume 01</a><br><hr>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+    <script src="manga.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="buy.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images\Logo3.png" alt="Logo">
+        </div>
+        <nav>
+            <div class="mid">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.php" class="active">Home</a></li>
+                        <li><a href="latest.php" class="active">Latest</a></li>
+                        <li><a href="top.php" class="active">Top Selling</a></li>
+                        <li><a href="ranking.php" class="active">Ranking</a></li>
+                        <li><a href="about.php" class="active">About Us</a></li>
+                        <!-- <li><a href="#">Contact Us</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <div class="right">
+            <div class="dropdown">
+                <button class="btn" onclick="toggleMenu()">Menu &#9776;</button>
+                <div class="dropdown-content" id="menuContent">
+                    <!-- <button class="close-btn" onclick="toggleMenu()">&times; Close</button> -->
+                    <a href="index.php">Home</a>
+                    <a href="about.php">About Us</a>
+                    <a href="about.php#contact">Contact Us</a>
+                    <a href="login.php">Log In</a>
+                    <a href="signup.php">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="manga">
+        <div class="img-container">
+            <img src="images\jjk2.jpg" alt="One Piece">
+            <button id="buy"> Buy Now</button>
+        </div>
+        <div class="summary">
+            <div class="title">
+                <h2>Jujutsu Kaisen</h2>
+                <p1>Gege Akutami</p1>
+            </div>
+            <h4>SUMMARY</h4>
+            <p2>For some strange reason, Yuji Itadori, despite his insane athleticism would rather just hang out with
+                the Occult Club. However, her soon finds out that the occult is as real as it gets when his fellow club
+                members are attacked! Meanwhile, the mysterious Megumi Fushiguro is tracking down a special-grade cursed
+                object, and his search leads him to Itadori...
+            </p2>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="close-btn" onclick="document.getElementById('popup').style.display = 'none';">&times;</div>
+            <h2>Buy All Volumes !!!</h2>
+            <hr>
+            <div class="volumes">
+                <a href="https://www.amazon.in/Jujutsu-Kaisen-Vol-23/dp/1974746291/ref=mp_s_a_1_2?crid=161O4UDZ6PCPF&dib=eyJ2IjoiMSJ9.A48bzv_r7il3SvlW83hn7fTQkiguoGGtmVspgzTbXTsTOrj4-JM_I5iBSJXMUkHgFT84YVrLwhHGEWNm65K44tHsijQJ5uozIJALev5ge6mAZXf1fNRrnvl8n-BAPwbKDfXWvPzq07j1fqnnBF_yefvin536lixrJFrlm5qnL_yoRBlg4u81A0tvbLI30ohAQ44nBIAlwIioidZa4EiQzA.bNIDU4XRYB9RNpk7wmjkVy99DEqZWKzwAmsotJwVB0g&dib_tag=se&keywords=jujutsu+kaisen+manga+23&qid=1714319025&sprefix=jujutsu+kaisen+manga+2%2Caps%2C247&sr=8-2">Volume 23</a><br>
+                <hr>
+                <a href="https://www.amazon.in/Jujutsu-Kaisen-Vol-22/dp/1974743411/ref=mp_s_a_1_1?crid=3N3K1KN1LKMNW&dib=eyJ2IjoiMSJ9.uIjzu1hPYO3XRuWj-VbV6YO7FnrCKY61XuxbgEaEW4Rop6qc0rQLHadIugy0GU-tuo6KL8Y_R0HNsjQCNMd8ujHyO2UJZ3QbaI3cqzRgEaqjZZ5mlGum8qJyZUZKiRhH77uXTG9HQS3iX7o0Jhc5dPAv_gydQQm5dImlqBQFIS9-vI9PI9MH3_a-kwXhAjtGrXikzOrD3UAvJPj87mglNA.iqcPuu1r-lYGlYoWx8uVI-ZpRfJVLuEs5qXUen2L4nI&dib_tag=se&keywords=jujutsu+kaisen+manga+22&qid=1714319040&sprefix=jujutsu+kaisen+manga+2%2Caps%2C295&sr=8-1">Volume 22</a><br>
+                <hr>
+                <a href="https://www.amazon.in/Jujutsu-Kaisen-Vol-21/dp/1974741222/ref=mp_s_a_1_12?crid=3N3K1KN1LKMNW&dib=eyJ2IjoiMSJ9.uIjzu1hPYO3XRuWj-VbV6YO7FnrCKY61XuxbgEaEW4Rop6qc0rQLHadIugy0GU-tuo6KL8Y_R0HNsjQCNMd8ujHyO2UJZ3QbaI3cqzRgEaqjZZ5mlGum8qJyZUZKiRhH77uXTG9HQS3iX7o0Jhc5dPAv_gydQQm5dImlqBQFIS9-vI9PI9MH3_a-kwXhAjtGrXikzOrD3UAvJPj87mglNA.iqcPuu1r-lYGlYoWx8uVI-ZpRfJVLuEs5qXUen2L4nI&dib_tag=se&keywords=jujutsu+kaisen+manga+22&qid=1714319040&sprefix=jujutsu+kaisen+manga+2%2Caps%2C295&sr=8-12">Volume 21</a><br>
+                <hr>
+                <a href="https://www.amazon.in/JUJUTSU-KAISEN-VOL-Gege-Akutami/dp/1974738744/ref=mp_s_a_1_2?crid=3N3K1KN1LKMNW&dib=eyJ2IjoiMSJ9.uIjzu1hPYO3XRuWj-VbV6YO7FnrCKY61XuxbgEaEW4Rop6qc0rQLHadIugy0GU-tuo6KL8Y_R0HNsjQCNMd8ujHyO2UJZ3QbaI3cqzRgEaqjZZ5mlGum8qJyZUZKiRhH77uXTG9HQS3iX7o0Jhc5dPAv_gydQQm5dImlqBQFIS9-vI9PI9MH3_a-kwXhAjtGrXikzOrD3UAvJPj87mglNA.iqcPuu1r-lYGlYoWx8uVI-ZpRfJVLuEs5qXUen2L4nI&dib_tag=se&keywords=jujutsu+kaisen+manga+22&qid=1714319040&sprefix=jujutsu+kaisen+manga+2%2Caps%2C295&sr=8-2">Volume 20</a><br>
+                <hr>
+                <a href="https://www.amazon.in/Jujutsu-Kaisen-Vol-19/dp/197473627X/ref=mp_s_a_1_1?crid=3DSJFY40ZGU8S&dib=eyJ2IjoiMSJ9.2xHVQpuv6FRrVgFL9nIYHnOZpQWXtXVt5YRX-skWadFhhPs9llRW9B4ma_YosFFEm2JvK_AqPzC9b1c0CML0xKUwU8wPQarztfGbM1geSzqTdm1tteDOqPRpwvePy_hzYabL9no09qPv245qTZ_uaWvdpK7uD886HvyCRGzmwXpIvYIV375o-ve9i3Dq1TIXdx9cICWBCegsqJFqy7We1w.s9ZLLqZgSN64tPcC33hMp4Yp5au1d6UEZAOD5TPFjgQ&dib_tag=se&keywords=jujutsu+kaisen+manga+19&qid=1714319089&sprefix=jujutsu+kaisen+manga+19%2Caps%2C230&sr=8-1">Volume 19</a><br>
+                <hr>
+                <a href="https://www.amazon.in/JUJUTSU-KAISEN-VOL-Gege-Akutami/dp/1974734390/ref=mp_s_a_1_1?crid=2L3W6ZKRBZUAX&dib=eyJ2IjoiMSJ9.35mSWNWfti64TCZLjLMzXcR6BqQYDbWaLWAFPHtNeSmdNVp7Ejm0Q-db6b1KCd5QMqbK-ugeMTXV24t9bYIUf1FKl755zqqLIcnl5tjQFuI5OfViKtukULhINULUKh16qdSfWyTrvyABNFo4BpYTZzjiCCiLEu22nNuwPcCOnlIUcpKpkpLoCD5o2Ic-x2HJQ_QUOQZof6ZHhRfHGlVnCA.YoCqM714wC5qaDXHToOECOIJPz3GaET24OHVWRfcHI8&dib_tag=se&keywords=jujutsu+kaisen+manga+18&qid=1714319118&sprefix=jujutsu+kaisen+manga+18%2Caps%2C225&sr=8-1">Volume 18</a><br>
+                <hr>
+                <a href="https://www.amazon.in/JUJUTSU-KAISEN-VOL-Gege-Akutami/dp/1974732339/ref=mp_s_a_1_7?crid=2L3W6ZKRBZUAX&dib=eyJ2IjoiMSJ9.35mSWNWfti64TCZLjLMzXcR6BqQYDbWaLWAFPHtNeSmdNVp7Ejm0Q-db6b1KCd5QMqbK-ugeMTXV24t9bYIUf1FKl755zqqLIcnl5tjQFuI5OfViKtukULhINULUKh16qdSfWyTrvyABNFo4BpYTZzjiCCiLEu22nNuwPcCOnlIUcpKpkpLoCD5o2Ic-x2HJQ_QUOQZof6ZHhRfHGlVnCA.YoCqM714wC5qaDXHToOECOIJPz3GaET24OHVWRfcHI8&dib_tag=se&keywords=jujutsu+kaisen+manga+18&qid=1714319118&sprefix=jujutsu+kaisen+manga+18%2Caps%2C225&sr=8-7">Volume 17</a><br>
+                <hr>
+                <a href="https://www.amazon.in/Jujutsu-Kaisen-Vol-16/dp/1974728986/ref=mp_s_a_1_11?crid=2L3W6ZKRBZUAX&dib=eyJ2IjoiMSJ9.35mSWNWfti64TCZLjLMzXcR6BqQYDbWaLWAFPHtNeSmdNVp7Ejm0Q-db6b1KCd5QMqbK-ugeMTXV24t9bYIUf1FKl755zqqLIcnl5tjQFuI5OfViKtukULhINULUKh16qdSfWyTrvyABNFo4BpYTZzjiCCiLEu22nNuwPcCOnlIUcpKpkpLoCD5o2Ic-x2HJQ_QUOQZof6ZHhRfHGlVnCA.YoCqM714wC5qaDXHToOECOIJPz3GaET24OHVWRfcHI8&dib_tag=se&keywords=jujutsu+kaisen+manga+18&qid=1714319118&sprefix=jujutsu+kaisen+manga+18%2Caps%2C225&sr=8-11">Volume 16</a><br>
+                <hr>
+                <a href="https://www.amazon.in/Jujutsu-Kaisen-Vol-15/dp/1974727106/ref=mp_s_a_1_1?crid=2XLDQL5R17INY&dib=eyJ2IjoiMSJ9.aCBlmcacw2p3e4F6hGrqLeFQF2xk9hdDLotYeigcdj0vxY1YOU4DMXMGj30sKl7EtF3uFkTk3z6YlQslwWm9UzMpclDB2bU08M53FyGQIzm8PhPVekQaSoUHdKbPfZb6e3eMpG3h2QZnFINpCzyEfF_Yqk5JWvs-jnSDSsQBvtSBQeVX5a7Ier22l0l23KCjHMdsLBQ__zhfgXXhF_pe8Q.FXNqnAfIWsx9f85VaiVG3jZM8yQ-4bvHDur4xNopE7o&dib_tag=se&keywords=jujutsu+kaisen+manga+15&qid=1714319148&sprefix=jujutsu+kaisen+manga+1%2Caps%2C220&sr=8-1">Volume 15</a><br>
+                <hr>
+                <a href="https://www.amazon.in/Jujutsu-Kaisen-Vol-14/dp/1974725324/ref=mp_s_a_1_7?crid=2XLDQL5R17INY&dib=eyJ2IjoiMSJ9.aCBlmcacw2p3e4F6hGrqLeFQF2xk9hdDLotYeigcdj0vxY1YOU4DMXMGj30sKl7EtF3uFkTk3z6YlQslwWm9UzMpclDB2bU08M53FyGQIzm8PhPVekQaSoUHdKbPfZb6e3eMpG3h2QZnFINpCzyEfF_Yqk5JWvs-jnSDSsQBvtSBQeVX5a7Ier22l0l23KCjHMdsLBQ__zhfgXXhF_pe8Q.FXNqnAfIWsx9f85VaiVG3jZM8yQ-4bvHDur4xNopE7o&dib_tag=se&keywords=jujutsu+kaisen+manga+15&qid=1714319148&sprefix=jujutsu+kaisen+manga+1%2Caps%2C220&sr=8-7">Volume 14</a><br>
+                <hr>
+                <a href="">Volume 13</a><br>
+                <hr>
+                <a href="">Volume 12</a><br>
+                <hr>
+                <a href="">Volume 11</a><br>
+                <hr>
+                <a href="">Volume 10</a><br>
+                <hr>
+                <a href="">Volume 09</a><br>
+                <hr>
+                <a href="">Volume 08</a><br>
+                <hr>
+                <a href="">Volume 07</a><br>
+                <hr>
+                <a href="">Volume 06</a><br>
+                <hr>
+                <a href="">Volume 05</a><br>
+                <hr>
+                <a href="">Volume 04</a><br>
+                <hr>
+                <a href="">Volume 03</a><br>
+                <hr>
+                <a href="">Volume 02</a><br>
+                <hr>
+                <a href="">Volume 01</a><br>
+                <hr>
+                <a href="https://www.amazon.in/Jujutsu-Kaisen-0-Gege-Akutami/dp/1974720144/ref=mp_s_a_1_10?crid=2XLDQL5R17INY&dib=eyJ2IjoiMSJ9.aCBlmcacw2p3e4F6hGrqLeFQF2xk9hdDLotYeigcdj0vxY1YOU4DMXMGj30sKl7EtF3uFkTk3z6YlQslwWm9UzMpclDB2bU08M53FyGQIzm8PhPVekQaSoUHdKbPfZb6e3eMpG3h2QZnFINpCzyEfF_Yqk5JWvs-jnSDSsQBvtSBQeVX5a7Ier22l0l23KCjHMdsLBQ__zhfgXXhF_pe8Q.FXNqnAfIWsx9f85VaiVG3jZM8yQ-4bvHDur4xNopE7o&dib_tag=se&keywords=jujutsu+kaisen+manga+15&qid=1714319148&sprefix=jujutsu+kaisen+manga+1%2Caps%2C220&sr=8-10">Volume 00</a><br>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+    <script src="manga.js"></script>
+</body>
+
+</html>

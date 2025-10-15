@@ -1,0 +1,50 @@
+.login{
+    background-color: rgb(235, 233, 233);
+    border-radius: 50px;
+    height: 75vh;
+    width: 40vw;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: black;
+    padding-top: 0.02px;
+}
+.login h1{
+    text-align: center;
+    border-bottom: 4px solid black;
+}
+.cont{
+    margin-left: 25px;
+    font-size: 20px;
+}
+.cont a{
+    margin-left: 5px;
+    color: red;
+}
+.cont input,.cont h4{
+    margin-bottom: 0px;
+    outline: none;
+}
+.cont h4{
+    font-size: 22px;
+    margin-top: 18px;
+}
+.cont input{
+    width: 60%;
+}
+.cont button{
+    color: white;
+    background-color: red;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    outline: none;
+}
+.cont button:hover{
+    text-decoration: underline;
+}
+.cont p{
+    margin-top: 8px;
+}

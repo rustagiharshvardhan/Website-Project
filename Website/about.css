@@ -1,0 +1,28 @@
+#about {
+    box-shadow:
+    0px -35px 30px -25px rgba(0,0,0,0.7),   /* Shadow at the top */
+    35px 0px 30px -25px rgba(0,0,0,0.7),    /* Shadow on the right */
+    0px 35px 30px -25px rgba(0,0,0,0.7),    /* Shadow at the bottom */
+    -35px 0px 30px -25px rgba(0,0,0,0.7);   /* Shadow on the left */
+    border-radius: 40px;
+    height: 160vh;
+    /* text-align: center; */
+    color: rgba(255, 255, 255 ,2);
+    z-index: 2;
+    font-weight: bold;
+    background-color: rgba(49, 46, 46, 0.8);
+    width: 80vw;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+}
+#about h2,#about h3{
+    text-decoration: underline;
+    padding-bottom: 0px;
+}

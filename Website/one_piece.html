@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="buy.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images\Logo3.png" alt="Logo">
+        </div>
+        <nav>
+            <div class="mid">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.php" class="active">Home</a></li>
+                        <li><a href="latest.php" class="active">Latest</a></li>
+                        <li><a href="top.php" class="active">Top Selling</a></li>
+                        <li><a href="ranking.php" class="active">Ranking</a></li>
+                        <li><a href="about.php" class="active">About Us</a></li>
+                        <!-- <li><a href="#">Contact Us</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <div class="right">
+            <div class="dropdown">
+                <button class="btn" onclick="toggleMenu()">Menu &#9776;</button>
+                <div class="dropdown-content" id="menuContent">
+                    <!-- <button class="close-btn" onclick="toggleMenu()">&times; Close</button> -->
+                    <a href="index.php">Home</a>
+                    <a href="about.php">About Us</a>
+                    <a href="about.php#contact">Contact Us</a>
+                    <a href="login.php">Log In</a>
+                    <a href="signup.php">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="manga">
+        <div class="img-container">
+            <img src="images\one piece 2.jpg" alt="One Piece">
+            <button id="buy"> Buy Now</button>
+        </div>
+        <div class="summary">
+            <div class="title">
+            <h2>One Piece</h2>
+            <p1>Eiichiro Oda</p1>
+        </div>
+            <h4>SUMMARY</h4>
+            <p2>As a child, Monkey D. Luffy was inspired to become a pirate by listening to the tales of the buccaneer "Red-Haired" Shanks. But Luffy's life changed when he accidentally ate the Gum-Gum Devil Fruit and gained the power to stretch like rubber...at the cost of never being able to swim again! Years later, still vowing to become the king of the pirates, Luffy sets out on his adventure...one guy alone in a rowboat, in search of the legendary "One Piece," said to be the greatest treasure in the world...</p2>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="close-btn" onclick="document.getElementById('popup').style.display = 'none';">&times;</div>
+            <h2>Buy All Volumes !!!</h2><hr>
+            <div class="volumes">
+                <a href="https://www.amazon.in/One-Piece-Vol-105/dp/1974743276/ref=mp_s_a_1_14?crid=1WDMDYWWYZ0JD&dib=eyJ2IjoiMSJ9.hu7ly31iCx5d189eJkesdgCtJHVyIXPIEw2G0e0QX7VrfLm6XrVQSlvztS-8AH6xfF_Vgp4GD7vFlSjeuN6GkH_4Gk3d4HMLm3Thl1d5O2XqkzNgU9csCBbPWXU9J5wzGvVU2TLj2qmqcXNaCZxbnpGeK4PugSJwuQSNlGzaHYCgz58YRgdNp5xycDYpCiM3cs5KlPajfUmGte-_lgQjvQ.e1bw2ONaIA5PwXPNqGrbQA_E4r5L0VzOZs2SCsKkIBY&dib_tag=se&keywords=one+piece+manga&qid=1714317993&sprefix=one+piece+ma%2Caps%2C238&sr=8-14">Volume 105</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-104/dp/197474129X/ref=mp_s_a_1_5?crid=1WDMDYWWYZ0JD&dib=eyJ2IjoiMSJ9.hu7ly31iCx5d189eJkesdgCtJHVyIXPIEw2G0e0QX7VrfLm6XrVQSlvztS-8AH6xfF_Vgp4GD7vFlSjeuN6GkH_4Gk3d4HMLm3Thl1d5O2XqkzNgU9csCBbPWXU9J5wzGvVU2TLj2qmqcXNaCZxbnpGeK4PugSJwuQSNlGzaHYCgz58YRgdNp5xycDYpCiM3cs5KlPajfUmGte-_lgQjvQ.e1bw2ONaIA5PwXPNqGrbQA_E4r5L0VzOZs2SCsKkIBY&dib_tag=se&keywords=one+piece+manga&qid=1714317993&sprefix=one+piece+ma%2Caps%2C238&sr=8-5">Volume 104</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-103/dp/1974738701/ref=mp_s_a_1_6?crid=1WDMDYWWYZ0JD&dib=eyJ2IjoiMSJ9.hu7ly31iCx5d189eJkesdgCtJHVyIXPIEw2G0e0QX7VrfLm6XrVQSlvztS-8AH6xfF_Vgp4GD7vFlSjeuN6GkH_4Gk3d4HMLm3Thl1d5O2XqkzNgU9csCBbPWXU9J5wzGvVU2TLj2qmqcXNaCZxbnpGeK4PugSJwuQSNlGzaHYCgz58YRgdNp5xycDYpCiM3cs5KlPajfUmGte-_lgQjvQ.e1bw2ONaIA5PwXPNqGrbQA_E4r5L0VzOZs2SCsKkIBY&dib_tag=se&keywords=one+piece+manga&qid=1714317993&sprefix=one+piece+ma%2Caps%2C238&sr=8-6">Volume 103</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-102/dp/1974736555/ref=mp_s_a_1_17?crid=1WDMDYWWYZ0JD&dib=eyJ2IjoiMSJ9.hu7ly31iCx5d189eJkesdgCtJHVyIXPIEw2G0e0QX7VrfLm6XrVQSlvztS-8AH6xfF_Vgp4GD7vFlSjeuN6GkH_4Gk3d4HMLm3Thl1d5O2XqkzNgU9csCBbPWXU9J5wzGvVU2TLj2qmqcXNaCZxbnpGeK4PugSJwuQSNlGzaHYCgz58YRgdNp5xycDYpCiM3cs5KlPajfUmGte-_lgQjvQ.e1bw2ONaIA5PwXPNqGrbQA_E4r5L0VzOZs2SCsKkIBY&dib_tag=se&keywords=one+piece+manga&qid=1714317993&sprefix=one+piece+ma%2Caps%2C238&sr=8-17">Volume 102</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-101/dp/197473420X/ref=mp_s_a_1_1?crid=3HD984FXBKKAK&dib=eyJ2IjoiMSJ9.4EvtjME7RPWGZzRoaLt4dzmWrIJ6LINjADtcpy5EUPdvvyA5ufnHGh6EsaApjH-2ZRJ-hsH6DLdY_Z3oEw9aLQAhNKhdnNOnZs6v602chrw2fdElgj_x64OuHGLcsuEpZcHYPADLiQD7ENBWrkxDxHKyyyZAllfJiRV5e7BV2IlD63MC74gG55kHvXU86X8puaL5sJ92akR0muZjMX4w2A.-blfKHsBsnwKEQ4tiyeqhCyZVsFA08G8mepRjzs95zg&dib_tag=se&keywords=one+piece+manga+101&qid=1714318301&sprefix=one+piece+manga+101%2Caps%2C234&sr=8-1">Volume 101</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-100/dp/1974732177/ref=mp_s_a_1_3?crid=3HD984FXBKKAK&dib=eyJ2IjoiMSJ9.4EvtjME7RPWGZzRoaLt4dzmWrIJ6LINjADtcpy5EUPdvvyA5ufnHGh6EsaApjH-2ZRJ-hsH6DLdY_Z3oEw9aLQAhNKhdnNOnZs6v602chrw2fdElgj_x64OuHGLcsuEpZcHYPADLiQD7ENBWrkxDxHKyyyZAllfJiRV5e7BV2IlD63MC74gG55kHvXU86X8puaL5sJ92akR0muZjMX4w2A.-blfKHsBsnwKEQ4tiyeqhCyZVsFA08G8mepRjzs95zg&dib_tag=se&keywords=one+piece+manga+101&qid=1714318320&sprefix=one+piece+manga+101%2Caps%2C234&sr=8-3">Volume 100</a><br><hr>
+                <a href="https://www.amazon.in/ONE-PIECE-VOL-99-EIICHIRO-ODA/dp/1974729001/ref=mp_s_a_1_1?crid=13KZZPU6H6A0T&dib=eyJ2IjoiMSJ9.lRIYoHKSTwAD06exQd2yVNnJmsth5QbJYpns9hDckdTg0NB-OaOW5esXTik8_ywBagC1c6lO5Pw46z_9AxIIsw0z5589Fr3etb8n-rb9RVUf6t-D5LFZZpKLD0wJC0s6Rc2awJ19OaQCVmMRY-fVLFPEK_oaLcocLkqv0-BwNF15wOHTLQx_C2yKw7cqo0V54YCUtauvg6TABx_rCCZUAg.L80xk3NwvFiyQBfxObYwc3yhnWf6zcKE3Jf2iupXY6E&dib_tag=se&keywords=one+piece+manga+99&qid=1714318339&sprefix=one+piece+manga+99%2Caps%2C230&sr=8-1">Volume 99</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-98/dp/1974725197/ref=mp_s_a_1_5?crid=13KZZPU6H6A0T&dib=eyJ2IjoiMSJ9.lRIYoHKSTwAD06exQd2yVNnJmsth5QbJYpns9hDckdTg0NB-OaOW5esXTik8_ywBagC1c6lO5Pw46z_9AxIIsw0z5589Fr3etb8n-rb9RVUf6t-D5LFZZpKLD0wJC0s6Rc2awJ19OaQCVmMRY-fVLFPEK_oaLcocLkqv0-BwNF15wOHTLQx_C2yKw7cqo0V54YCUtauvg6TABx_rCCZUAg.L80xk3NwvFiyQBfxObYwc3yhnWf6zcKE3Jf2iupXY6E&dib_tag=se&keywords=one+piece+manga+99&qid=1714318339&sprefix=one+piece+manga+99%2Caps%2C230&sr=8-5">Volume 98</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-97/dp/1974722899/ref=mp_s_a_1_4?crid=13KZZPU6H6A0T&dib=eyJ2IjoiMSJ9.lRIYoHKSTwAD06exQd2yVNnJmsth5QbJYpns9hDckdTg0NB-OaOW5esXTik8_ywBagC1c6lO5Pw46z_9AxIIsw0z5589Fr3etb8n-rb9RVUf6t-D5LFZZpKLD0wJC0s6Rc2awJ19OaQCVmMRY-fVLFPEK_oaLcocLkqv0-BwNF15wOHTLQx_C2yKw7cqo0V54YCUtauvg6TABx_rCCZUAg.L80xk3NwvFiyQBfxObYwc3yhnWf6zcKE3Jf2iupXY6E&dib_tag=se&keywords=one+piece+manga+99&qid=1714318339&sprefix=one+piece+manga+99%2Caps%2C230&sr=8-4">Volume 97</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-96-Oden-ebook/dp/B08ZYPJ8TF/ref=mp_s_a_1_4?crid=1D66IJHWR8EID&dib=eyJ2IjoiMSJ9.yv5eekAWBSklGukPNZVLu4M8vg5bSEG_LVmSXmJ9m8C82BoFX3GxUYKQVmwvhJw10nvNuPqwivQFYhXWkgBmtwq1ZC-HxGOF0f__6TEnlWI48Gi38qwDEOsSt2ezWqQeg0GGOrRJc7JZuHPNmtBqNeW-X9TH-fwnGiduv8fHcuRvC4LInvjQR2t4tCfFo3wM3C1LJT1lWLPD93E0Tgvotg.xNOdtblY3gpsfe7OkO9dA9hbHaAgfMuprBqQ3CXRDxU&dib_tag=se&keywords=one+piece+manga+96&qid=1714318380&sprefix=one+piece+manga+96%2Caps%2C259&sr=8-4">Volume 96</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-95/dp/1974718131/ref=mp_s_a_1_3?crid=1D66IJHWR8EID&dib=eyJ2IjoiMSJ9.yv5eekAWBSklGukPNZVLu4M8vg5bSEG_LVmSXmJ9m8C82BoFX3GxUYKQVmwvhJw10nvNuPqwivQFYhXWkgBmtwq1ZC-HxGOF0f__6TEnlWI48Gi38qwDEOsSt2ezWqQeg0GGOrRJc7JZuHPNmtBqNeW-X9TH-fwnGiduv8fHcuRvC4LInvjQR2t4tCfFo3wM3C1LJT1lWLPD93E0Tgvotg.xNOdtblY3gpsfe7OkO9dA9hbHaAgfMuprBqQ3CXRDxU&dib_tag=se&keywords=one+piece+manga+96&qid=1714318380&sprefix=one+piece+manga+96%2Caps%2C259&sr=8-3">Volume 95</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-94/dp/197471537X/ref=mp_s_a_1_12?crid=1D66IJHWR8EID&dib=eyJ2IjoiMSJ9.yv5eekAWBSklGukPNZVLu4M8vg5bSEG_LVmSXmJ9m8C82BoFX3GxUYKQVmwvhJw10nvNuPqwivQFYhXWkgBmtwq1ZC-HxGOF0f__6TEnlWI48Gi38qwDEOsSt2ezWqQeg0GGOrRJc7JZuHPNmtBqNeW-X9TH-fwnGiduv8fHcuRvC4LInvjQR2t4tCfFo3wM3C1LJT1lWLPD93E0Tgvotg.xNOdtblY3gpsfe7OkO9dA9hbHaAgfMuprBqQ3CXRDxU&dib_tag=se&keywords=one+piece+manga+96&qid=1714318380&sprefix=one+piece+manga+96%2Caps%2C259&sr=8-12">Volume 94</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-93/dp/1974712559/ref=mp_s_a_1_22?crid=1D66IJHWR8EID&dib=eyJ2IjoiMSJ9.4HUV7tYs1FZVJ_VN2g2-Lc3JU18REGWITC7sNFRlrSpQ7MV1U84h2q1zwd75BEYYqKHdgC0fRxTPjSrQkZ_vGBQxTXpLRhJwKhzoHca4ACs_9rC9ZY1ZgZLbK2vryNJjakDVXSGTae9rQoaiH3J3v3bnR-IMp-ms0RV8yLFNusJUBbXpIoNRvVISwnw4n_qRbBtLwyMkkcQEL6-gBKqwFw.QKy5Hpp2kLBO8dVvwCgSSjehR0-sYYNzlJt4igOSCWI&dib_tag=se&keywords=one+piece+manga+96&qid=1714318418&sprefix=one+piece+manga+96%2Caps%2C259&sr=8-22">Volume 93</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-Eiichiro-Oda/dp/1974710157/ref=mp_s_a_1_14?crid=1D66IJHWR8EID&dib=eyJ2IjoiMSJ9.yv5eekAWBSklGukPNZVLu4M8vg5bSEG_LVmSXmJ9m8C82BoFX3GxUYKQVmwvhJw10nvNuPqwivQFYhXWkgBmtwq1ZC-HxGOF0f__6TEnlWI48Gi38qwDEOsSt2ezWqQeg0GGOrRJc7JZuHPNmtBqNeW-X9TH-fwnGiduv8fHcuRvC4LInvjQR2t4tCfFo3wM3C1LJT1lWLPD93E0Tgvotg.xNOdtblY3gpsfe7OkO9dA9hbHaAgfMuprBqQ3CXRDxU&dib_tag=se&keywords=one+piece+manga+96&qid=1714318380&sprefix=one+piece+manga+96%2Caps%2C259&sr=8-14">Volume 92</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-Eiichiro-Oda/dp/1974707016/ref=mp_s_a_1_17?crid=1D66IJHWR8EID&dib=eyJ2IjoiMSJ9.4HUV7tYs1FZVJ_VN2g2-Lc3JU18REGWITC7sNFRlrSpQ7MV1U84h2q1zwd75BEYYqKHdgC0fRxTPjSrQkZ_vGBQxTXpLRhJwKhzoHca4ACs_9rC9ZY1ZgZLbK2vryNJjakDVXSGTae9rQoaiH3J3v3bnR-IMp-ms0RV8yLFNusJUBbXpIoNRvVISwnw4n_qRbBtLwyMkkcQEL6-gBKqwFw.QKy5Hpp2kLBO8dVvwCgSSjehR0-sYYNzlJt4igOSCWI&dib_tag=se&keywords=one+piece+manga+96&qid=1714318431&sprefix=one+piece+manga+96%2Caps%2C259&sr=8-17">Volume 91</a><br><hr>
+                <a href="https://www.amazon.in/One-Piece-Vol-Eiichiro-Oda/dp/1974707008/ref=mp_s_a_1_10?crid=1D66IJHWR8EID&dib=eyJ2IjoiMSJ9.yv5eekAWBSklGukPNZVLu4M8vg5bSEG_LVmSXmJ9m8C82BoFX3GxUYKQVmwvhJw10nvNuPqwivQFYhXWkgBmtwq1ZC-HxGOF0f__6TEnlWI48Gi38qwDEOsSt2ezWqQeg0GGOrRJc7JZuHPNmtBqNeW-X9TH-fwnGiduv8fHcuRvC4LInvjQR2t4tCfFo3wM3C1LJT1lWLPD93E0Tgvotg.xNOdtblY3gpsfe7OkO9dA9hbHaAgfMuprBqQ3CXRDxU&dib_tag=se&keywords=one+piece+manga+96&qid=1714318380&sprefix=one+piece+manga+96%2Caps%2C259&sr=8-10">Volume 90</a><br><hr>
+                <a href="">Volume 89</a><br><hr>
+                <a href="">Volume 88</a><br><hr>
+                <a href="">Volume 87</a><br><hr>
+                <a href="">Volume 86</a><br><hr>
+                <a href="">Volume 85</a><br><hr>
+                <a href="">Volume 84</a><br><hr>
+                <a href="">Volume 83</a><br><hr>
+                <a href="">Volume 82</a><br><hr>
+                <a href="">Volume 81</a><br><hr>
+                <a href="">Volume 80</a><br><hr>
+                <a href="">Volume 79</a><br><hr>
+                <a href="">Volume 78</a><br><hr>
+                <a href="">Volume 77</a><br><hr>
+                <a href="">Volume 76</a><br><hr>
+                <a href="">Volume 75</a><br><hr>
+                <a href="">Volume 74</a><br><hr>
+                <a href="">Volume 73</a><br><hr>
+                <a href="">Volume 72</a><br><hr>
+                <a href="">Volume 71</a><br><hr>
+                <a href="">Volume 70</a><br><hr>
+                <a href="">Volume 69</a><br><hr>
+                <a href="">Volume 68</a><br><hr>
+                <a href="">Volume 67</a><br><hr>
+                <a href="">Volume 66</a><br><hr>
+                <a href="">Volume 65</a><br><hr>
+                <a href="">Volume 64</a><br><hr>
+                <a href="">Volume 63</a><br><hr>
+                <a href="">Volume 62</a><br><hr>
+                <a href="">Volume 61</a><br><hr>
+                <a href="">Volume 60</a><br><hr>
+                <a href="">Volume 59</a><br><hr>
+                <a href="">Volume 58</a><br><hr>
+                <a href="">Volume 57</a><br><hr>
+                <a href="">Volume 56</a><br><hr>
+                <a href="">Volume 55</a><br><hr>
+                <a href="">Volume 54</a><br><hr>
+                <a href="">Volume 53</a><br><hr>
+                <a href="">Volume 52</a><br><hr>
+                <a href="">Volume 51</a><br><hr>
+                <a href="">Volume 50</a><br><hr>
+                <a href="">Volume 49</a><br><hr>
+                <a href="">Volume 48</a><br><hr>
+                <a href="">Volume 47</a><br><hr>
+                <a href="">Volume 46</a><br><hr>
+                <a href="">Volume 45</a><br><hr>
+                <a href="">Volume 44</a><br><hr>
+                <a href="">Volume 43</a><br><hr>
+                <a href="">Volume 42</a><br><hr>
+                <a href="">Volume 41</a><br><hr>
+                <a href="">Volume 40</a><br><hr>
+                <a href="">Volume 39</a><br><hr>
+                <a href="">Volume 38</a><br><hr>
+                <a href="">Volume 37</a><br><hr>
+                <a href="">Volume 36</a><br><hr>
+                <a href="">Volume 35</a><br><hr>
+                <a href="">Volume 34</a><br><hr>
+                <a href="">Volume 33</a><br><hr>
+                <a href="">Volume 32</a><br><hr>
+                <a href="">Volume 31</a><br><hr>
+                <a href="">Volume 30</a><br><hr>
+                <a href="">Volume 29</a><br><hr>
+                <a href="">Volume 28</a><br><hr>
+                <a href="">Volume 27</a><br><hr>
+                <a href="">Volume 26</a><br><hr>
+                <a href="">Volume 25</a><br><hr>
+                <a href="">Volume 24</a><br><hr>
+                <a href="">Volume 23</a><br><hr>
+                <a href="">Volume 22</a><br><hr>
+                <a href="">Volume 21</a><br><hr>
+                <a href="">Volume 20</a><br><hr>
+                <a href="">Volume 19</a><br><hr>
+                <a href="">Volume 18</a><br><hr>
+                <a href="">Volume 17</a><br><hr>
+                <a href="">Volume 16</a><br><hr>
+                <a href="">Volume 15</a><br><hr>
+                <a href="">Volume 14</a><br><hr>
+                <a href="">Volume 13</a><br><hr>
+                <a href="">Volume 12</a><br><hr>
+                <a href="">Volume 11</a><br><hr>
+                <a href="">Volume 10</a><br><hr>
+                <a href="">Volume 09</a><br><hr>
+                <a href="">Volume 08</a><br><hr>
+                <a href="">Volume 07</a><br><hr>
+                <a href="">Volume 06</a><br><hr>
+                <a href="">Volume 05</a><br><hr>
+                <a href="">Volume 04</a><br><hr>
+                <a href="">Volume 03</a><br><hr>
+                <a href="">Volume 02</a><br><hr>
+                <a href="">Volume 01</a><br><hr>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+    <script src="manga.js"></script>
+</body>
+
+</html>

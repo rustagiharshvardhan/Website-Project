@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="buy.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images\Logo3.png" alt="Logo">
+        </div>
+        <nav>
+            <div class="mid">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.php" class="active">Home</a></li>
+                        <li><a href="latest.php" class="active">Latest</a></li>
+                        <li><a href="top.php" class="active">Top Selling</a></li>
+                        <li><a href="ranking.php" class="active">Ranking</a></li>
+                        <li><a href="about.php" class="active">About Us</a></li>
+                        <!-- <li><a href="#">Contact Us</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <div class="right">
+            <div class="dropdown">
+                <button class="btn" onclick="toggleMenu()">Menu &#9776;</button>
+                <div class="dropdown-content" id="menuContent">
+                    <!-- <button class="close-btn" onclick="toggleMenu()">&times; Close</button> -->
+                    <a href="index.php">Home</a>
+                    <a href="about.php">About Us</a>
+                    <a href="about.php#contact">Contact Us</a>
+                    <a href="login.php">Log In</a>
+                    <a href="signup.php">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="manga">
+        <div class="img-container">
+            <img src="images\boruto 2.jpg" alt="Boruto">
+            <button id="buy"> Buy Now</button>
+        </div>
+        <div class="summary">
+            <div class="title">
+            <h2>Boruto</h2>
+            <p1>Masashi Kishimoto </p1>
+        </div>
+            <h4>SUMMARY</h4>
+            <p2>Years have passed since Naruto and Sasuke teamed up to defeat Kaguya, the progenitor of chakra and the greatest threat the ninja world has ever faced. Times are now peaceful and the new generation of shinobi has not experienced the same hardships as its parents. Perhaps that is why Boruto would rather play video games than train. However, one passion does burn deep in this ninja boy’s heart, and that is the desire to defeat his father!
+            </p2>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="close-btn" onclick="document.getElementById('popup').style.display = 'none';">&times;</div>
+            <h2>Buy All Volumes !!!</h2><hr>
+            <div class="volumes">
+                <a href="https://www.amazon.in/BORUTO-VOL-16-Masashi-Kishimoto/dp/1974734722/ref=mp_s_a_1_1?crid=1RA7WCM6THK0R&dib=eyJ2IjoiMSJ9.MvGlhBwucYzfjmi7wtcaviEHAsAwqlE1nyfhoWZZDQydtRrXfh1ZwxZaIOtm1o1gBu09mw7Kf6jbm0sY6fW5WCv9I5iqpPkrclxO8IQxdt_yFvtehBcWQjQwvpC5FEIn3uCqUYQiswmps8bAthB_qZkPB3mwKVzRt66j07fEDy8EqBzI5OqZEjNoSppkdETp5ibQM8dMlXMCpUkMxdqJ2Q.S8UlDrfv8HN-WaPKIZNBk6nBPuZer0dtHs13ZMm6MHM&dib_tag=se&keywords=boruto+manga+16&qid=1714318639&sprefix=boruto+manga+16%2Caps%2C247&sr=8-1">Volume 16</a><br><hr>
+                <a href="https://www.amazon.in/BORUTO-VOL-15-Masashi-Kishimoto/dp/1974732320/ref=mp_s_a_1_4?crid=1RA7WCM6THK0R&dib=eyJ2IjoiMSJ9.MvGlhBwucYzfjmi7wtcaviEHAsAwqlE1nyfhoWZZDQydtRrXfh1ZwxZaIOtm1o1gBu09mw7Kf6jbm0sY6fW5WCv9I5iqpPkrclxO8IQxdt_yFvtehBcWQjQwvpC5FEIn3uCqUYQiswmps8bAthB_qZkPB3mwKVzRt66j07fEDy8EqBzI5OqZEjNoSppkdETp5ibQM8dMlXMCpUkMxdqJ2Q.S8UlDrfv8HN-WaPKIZNBk6nBPuZer0dtHs13ZMm6MHM&dib_tag=se&keywords=boruto+manga+16&qid=1714318639&sprefix=boruto+manga+16%2Caps%2C247&sr=8-4">Volume 15</a><br><hr>
+                <a href="https://www.amazon.in/BORUTO-VOL-14-Masashi-Kishimoto/dp/1974729672/ref=mp_s_a_1_3?crid=1RA7WCM6THK0R&dib=eyJ2IjoiMSJ9.MvGlhBwucYzfjmi7wtcaviEHAsAwqlE1nyfhoWZZDQydtRrXfh1ZwxZaIOtm1o1gBu09mw7Kf6jbm0sY6fW5WCv9I5iqpPkrclxO8IQxdt_yFvtehBcWQjQwvpC5FEIn3uCqUYQiswmps8bAthB_qZkPB3mwKVzRt66j07fEDy8EqBzI5OqZEjNoSppkdETp5ibQM8dMlXMCpUkMxdqJ2Q.S8UlDrfv8HN-WaPKIZNBk6nBPuZer0dtHs13ZMm6MHM&dib_tag=se&keywords=boruto+manga+16&qid=1714318639&sprefix=boruto+manga+16%2Caps%2C247&sr=8-3">Volume 14</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Naruto-Next-Generations-Vol/dp/1974725340/ref=mp_s_a_1_6?crid=1RA7WCM6THK0R&dib=eyJ2IjoiMSJ9.MvGlhBwucYzfjmi7wtcaviEHAsAwqlE1nyfhoWZZDQydtRrXfh1ZwxZaIOtm1o1gBu09mw7Kf6jbm0sY6fW5WCv9I5iqpPkrclxO8IQxdt_yFvtehBcWQjQwvpC5FEIn3uCqUYQiswmps8bAthB_qZkPB3mwKVzRt66j07fEDy8EqBzI5OqZEjNoSppkdETp5ibQM8dMlXMCpUkMxdqJ2Q.S8UlDrfv8HN-WaPKIZNBk6nBPuZer0dtHs13ZMm6MHM&dib_tag=se&keywords=boruto+manga+16&qid=1714318639&sprefix=boruto+manga+16%2Caps%2C247&sr=8-6">Volume 13</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Naruto-Next-Generations-Vol/dp/1974722775/ref=mp_s_a_1_1?crid=9CSV0R7SEPGD&dib=eyJ2IjoiMSJ9.k3-Wz89BJlPDbbjtm-KhBNvGReQd4fcYopMFLG1mNjpa2LP8RuQxhGCVUaeJzv9s2Tso5oyOEzaad0JFvOr2UXmxUsUCMv8FGDEo4lFID1gQoD_be9cBH4kjhAebA5U7W94UddV8mKPzByqVCDjv6spVYciEXxdVI1WYiSZ5j4tq4E0GQCwW-3OJY2BfpQG0ZM-Z288nQFG7Qm8wr94GMA.OZ4UccxC9f6th80BonUkNEWDNTu84G-zGQBXRTCtj1I&dib_tag=se&keywords=boruto+manga+12&qid=1714318728&sprefix=boruto+manga+1%2Caps%2C215&sr=8-1">Volume 12</a><br><hr>
+                <a href="https://www.amazon.in/BORUTO-VOL-11-Masashi-Kishimoto/dp/1974720950/ref=mp_s_a_1_3?crid=9CSV0R7SEPGD&dib=eyJ2IjoiMSJ9.k3-Wz89BJlPDbbjtm-KhBNvGReQd4fcYopMFLG1mNjpa2LP8RuQxhGCVUaeJzv9s2Tso5oyOEzaad0JFvOr2UXmxUsUCMv8FGDEo4lFID1gQoD_be9cBH4kjhAebA5U7W94UddV8mKPzByqVCDjv6spVYciEXxdVI1WYiSZ5j4tq4E0GQCwW-3OJY2BfpQG0ZM-Z288nQFG7Qm8wr94GMA.OZ4UccxC9f6th80BonUkNEWDNTu84G-zGQBXRTCtj1I&dib_tag=se&keywords=boruto+manga+12&qid=1714318728&sprefix=boruto+manga+1%2Caps%2C215&sr=8-3">Volume 11</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Naruto-Next-Generations-Vol/dp/1974718697/ref=mp_s_a_1_12?crid=9CSV0R7SEPGD&dib=eyJ2IjoiMSJ9.k3-Wz89BJlPDbbjtm-KhBNvGReQd4fcYopMFLG1mNjpa2LP8RuQxhGCVUaeJzv9s2Tso5oyOEzaad0JFvOr2UXmxUsUCMv8FGDEo4lFID1gQoD_be9cBH4kjhAebA5U7W94UddV8mKPzByqVCDjv6spVYciEXxdVI1WYiSZ5j4tq4E0GQCwW-3OJY2BfpQG0ZM-Z288nQFG7Qm8wr94GMA.OZ4UccxC9f6th80BonUkNEWDNTu84G-zGQBXRTCtj1I&dib_tag=se&keywords=boruto+manga+12&qid=1714318728&sprefix=boruto+manga+1%2Caps%2C215&sr=8-12">Volume 10</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Naruto-Next-Generations-Vol/dp/197471702X/ref=mp_s_a_1_4?crid=9CSV0R7SEPGD&dib=eyJ2IjoiMSJ9.k3-Wz89BJlPDbbjtm-KhBNvGReQd4fcYopMFLG1mNjpa2LP8RuQxhGCVUaeJzv9s2Tso5oyOEzaad0JFvOr2UXmxUsUCMv8FGDEo4lFID1gQoD_be9cBH4kjhAebA5U7W94UddV8mKPzByqVCDjv6spVYciEXxdVI1WYiSZ5j4tq4E0GQCwW-3OJY2BfpQG0ZM-Z288nQFG7Qm8wr94GMA.OZ4UccxC9f6th80BonUkNEWDNTu84G-zGQBXRTCtj1I&dib_tag=se&keywords=boruto+manga+12&qid=1714318728&sprefix=boruto+manga+1%2Caps%2C215&sr=8-4">Volume 09</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Vol-Naruto-Next-Generations/dp/1974708799/ref=mp_s_a_1_6?crid=9CSV0R7SEPGD&dib=eyJ2IjoiMSJ9.k3-Wz89BJlPDbbjtm-KhBNvGReQd4fcYopMFLG1mNjpa2LP8RuQxhGCVUaeJzv9s2Tso5oyOEzaad0JFvOr2UXmxUsUCMv8FGDEo4lFID1gQoD_be9cBH4kjhAebA5U7W94UddV8mKPzByqVCDjv6spVYciEXxdVI1WYiSZ5j4tq4E0GQCwW-3OJY2BfpQG0ZM-Z288nQFG7Qm8wr94GMA.OZ4UccxC9f6th80BonUkNEWDNTu84G-zGQBXRTCtj1I&dib_tag=se&keywords=boruto+manga+12&qid=1714318728&sprefix=boruto+manga+1%2Caps%2C215&sr=8-6">Volume 08</a><br><hr>
+                <a href="https://www.amazon.in/gp/aw/d/1974706990/ref=tmm_pap_swatch_0?ie=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.ijEmEWVqIyK5d7wFO5rCQiHEBwUamboCIZkxvBQuh5fCcMCMvD5lLAYRD2CUGZUAnJBiHlaPG2VjIfUtGXXtGKaPmlZRVRn68-KwsTo3Z1iWke54GamyeU_N2BnifbgJisik8rRiImVHLdNj7PyuScVb1WqtwTbjmbjUqylWKiw.XwJEQ8Cm3zObNjpamnhGufjYX-pqqhay3ntI6jbARz4&qid=1714318782&sr=8-16">Volume 07</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Vol-Naruto-Next-Generations/dp/1974706982/ref=mp_s_a_1_1?crid=2NK5H2OO4V8OZ&dib=eyJ2IjoiMSJ9.XFKr9fZsrmK5ju_zO3ifwZVJV2Gk7LMtLkSs8YMwpUYSOcL7LktW9S07gnt0Mj0p6qipxPs2HxNMeJsNZNjNkuijoEETCgvkBo_uTtOKLK3WGOgFksYmapjkkAhPKUbhqxWazP_fWT-wOc9rJCOKvzz_on3haVG4JMLf1BcONWsNCDvmjnJhmgUqi23BHkc_2cwvKf5MjbL4JGBsuR9qQA.ueXjGSTUARWTfoFMFI__gibjWfvomQod0eaeRLBI4os&dib_tag=se&keywords=boruto+manga+6&qid=1714318809&sprefix=boruto+manga+6%2Caps%2C229&sr=8-1">Volume 06</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Vol-Naruto-Next-Generations/dp/1974705129/ref=mp_s_a_1_1?dib=eyJ2IjoiMSJ9.HTfywKyu49KUS4J4raYt4B3TO2HoEyKRrd9FPZZJOazjkc-aZaek3dBKyrCq3B5cwvdDCafeEcE840IOGV6SKR54ChxWx_JdGS0eq3afEvNK1L8VgtteWawoR9dMmk88k_ogwcmN9MgeR6nmdSagiAYJxyStcg8pDdNcmO0S1Iz9dslnSHs1BsGOfqjDKyH6O0y9MqhbJDRxQVKn6-IuWg.ORM7aXBSgug_-fdqYp1AKJWxepTnwYNdI_iTSQ3-Uvk&dib_tag=se&keywords=boruto+manga+5&qid=1714318842&sr=8-1">Volume 05</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Naruto-Next-Generations-Vol/dp/1974701409/ref=mp_s_a_1_3?dib=eyJ2IjoiMSJ9.HTfywKyu49KUS4J4raYt4B3TO2HoEyKRrd9FPZZJOazjkc-aZaek3dBKyrCq3B5cwvdDCafeEcE840IOGV6SKR54ChxWx_JdGS0eq3afEvNK1L8VgtteWawoR9dMmk88k_ogwcmN9MgeR6nmdSagiAYJxyStcg8pDdNcmO0S1Iz9dslnSHs1BsGOfqjDKyH6O0y9MqhbJDRxQVKn6-IuWg.ORM7aXBSgug_-fdqYp1AKJWxepTnwYNdI_iTSQ3-Uvk&dib_tag=se&keywords=boruto+manga+5&qid=1714318842&sr=8-3">Volume 04</a><br><hr>
+                <a href="https://www.amazon.in/gp/aw/d/1421598221/ref=tmm_pap_swatch_0?ie=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.G6i4qcddH9gj-zAZ6C0J-lg-zq-ZXvvs07zCPg2c7AFChJ2wC3UdSBV3VJmxZfcVBu09mw7Kf6jbm0sY6fW5WGHlaHkfERRAarWrscfXdqiHgLgBBE5bNgfkoKf6VfRNF2vJidpkny16__RCM21tyzNYQTRY0PjOBUC41kGQEdqLZ91E7OPYZ9qMBdjuERuklDjsQth6upgyGlc3rp01Iw.0D5HsXccT0roX_GtawVUWzsgKYFAhgmgHj8niZHqoxI&qid=1714318869&sr=8-1">Volume 03</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Vol-Naruto-Next-Generations/dp/1421595842/ref=mp_s_a_1_5?dib=eyJ2IjoiMSJ9.G6i4qcddH9gj-zAZ6C0J-lg-zq-ZXvvs07zCPg2c7AFChJ2wC3UdSBV3VJmxZfcVBu09mw7Kf6jbm0sY6fW5WGHlaHkfERRAarWrscfXdqiHgLgBBE5bNgfkoKf6VfRNF2vJidpkny16__RCM21tyzNYQTRY0PjOBUC41kGQEdqLZ91E7OPYZ9qMBdjuERuklDjsQth6upgyGlc3rp01Iw.0D5HsXccT0roX_GtawVUWzsgKYFAhgmgHj8niZHqoxI&dib_tag=se&keywords=boruto+manga+3&qid=1714318869&sr=8-5">Volume 02</a><br><hr>
+                <a href="https://www.amazon.in/Boruto-Vol-1-Masashi-Kishimoto/dp/1421592118/ref=mp_s_a_1_2?dib=eyJ2IjoiMSJ9.G6i4qcddH9gj-zAZ6C0J-lg-zq-ZXvvs07zCPg2c7AFChJ2wC3UdSBV3VJmxZfcVBu09mw7Kf6jbm0sY6fW5WGHlaHkfERRAarWrscfXdqiHgLgBBE5bNgfkoKf6VfRNF2vJidpkny16__RCM21tyzNYQTRY0PjOBUC41kGQEdqLZ91E7OPYZ9qMBdjuERuklDjsQth6upgyGlc3rp01Iw.0D5HsXccT0roX_GtawVUWzsgKYFAhgmgHj8niZHqoxI&dib_tag=se&keywords=boruto+manga+3&qid=1714318869&sr=8-2">Volume 01</a><br><hr>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+    <script src="manga.js"></script>
+</body>
+
+</html>
